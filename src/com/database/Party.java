@@ -25,7 +25,7 @@ public class Party {
 
         if(isVeganString.equals("Y")||isVeganString.equals("y")){
             isVegan = true;
-        }else{
+        } else {
             isVegan = false;
         }
 
