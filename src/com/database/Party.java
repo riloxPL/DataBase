@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.ArrayList;
 
 public class Party {
-    private List<Guest> guests = new ArrayList<>();
+    private final List<Guest> guests = new ArrayList<>();
     private Guest guest;
 
     Scanner scanner = new Scanner(System.in);
@@ -23,18 +23,13 @@ public class Party {
 
         boolean isVegan;
 
-        if(isVeganString.equals("Y") || isVeganString.equals("y"))
-        {
-            isVegan = true;
-        }
-        else
-        {
-            isVegan = false;
-        }
+        isVegan = isVeganString.equals("Y") || isVeganString.equals("y");
 
         new Guest(name, meal, phoneNumber, isVegan);
 
         guests.add(guest);
+
+
     }
 
     public void displayGuests(){

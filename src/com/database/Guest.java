@@ -1,10 +1,10 @@
 package com.database;
 
 public class Guest {
-    private String name;
-    private String meal;
-    private int phoneNumber;
-    private boolean isvegan;
+    private final String name;
+    private final String meal;
+    private final int phoneNumber;
+    private final boolean isvegan;
 
     public Guest(String name, String meal, int phoneNumber, boolean isvegan) {
         this.name = name;
